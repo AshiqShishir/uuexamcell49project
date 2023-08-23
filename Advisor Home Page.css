@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(Images/Advisor.webp)!important;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover !important;
+    background-color: rgba(14, 158, 194, 0.664);
+    opacity: 1;
+}
+/* .f-area{
+    width: 30vw;
+    position: absolute;
+    top: 42vh;
+    left: 38vw;
+    background-color: rgba(14, 76, 124, 0.911);
+    text-align: center;
+    border: 2px solid rgba(240, 248, 255, 0.158);
+    border-radius: 30px 5px;
+    display: inline-block;
+} */
+
+
+
+/* Side Nav Bar */
+.side-nav-container{
+    background: yellowgreen;
+    width: 16vw;
+    height: calc(100% - 23vh);
+}
+.side-nav-container .side-nav-ul{
+    background: rgba(128, 19, 5, 0.678);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content:center;
+    
+}
+.side-nav-container .side-nav-ul .side-nav-li{
+    list-style: none;
+    transition: all .5s ease;
+    /* background: rgb(226, 208, 40); */
+}
+.side-nav-container .side-nav-ul .side-nav-li .link-name{
+    /* background: rgb(226, 208, 40); */
+}
+.side-nav-container .side-nav-ul .side-nav-li:hover{
+    border-radius: 20px 5px;
+    background: rgba(2, 90, 28, 0.582);
+    transform: scale(1.1) translate(2rem);
+    /* transform: translate(2rem); */
+}
+.side-nav-container .side-nav-ul .side-nav-li .link-name{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    /* background: turquoise; */
+}
+
+.side-nav-container .side-nav-ul .side-nav-li .link-name span{ 
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.side-nav-container .side-nav-ul .side-nav-li .link-name img{
+    position: relative;
+    top: 1vh;
+}
+
+
+
+
+
+
+.button-f{
+    position: absolute;
+    bottom: 4vh;
+    left: 80vw;
+}
+
+
+/*  Student Dashboard  */
+.user-dash{
+    background: rgba(16, 61, 158, 0.377);
+    color: aliceblue;
+    position: absolute;
+    top: 26vh;
+    left: 42vw;
+    border-radius: 20px 5px;
+    width: 30vw;   
+}
+.user-dash h1{
+    position: relative;
+    left: 2.5vw;
+}
+
+
+.user-profile{
+    background: rgba(228, 228, 225, 0.726);
+    position: absolute;
+    top: 40vh;
+    left: 38vw;
+    width: 40vw;
+    height: 45vh;
+    border: 6px groove;
+    border-color: rgb(6, 182, 194);
+    border-radius: 70px 10px;
+    cursor: pointer;
+}
+.user-profile .user-dp{
+    background: wheat;
+    width: calc(100% - 40vw);
+    height: calc(100% - 45vh);
+    position: relative;
+    left: 16vw;
+    margin-top: .5vh;
+}
+.user-profile .user-dp img{
+    border: 2px solid;
+    border-radius: 30px;
+    object-fit: cover;
+    width: 6vw;
+    height: 15vh;
+    position: relative;
+    left: 1vw;
+}
+.user-profile .user-dp figcaption{
+    width:20vw ;
+    position: relative;
+    right: 6vw;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px 25px;
+}
+.user-profile .user-info{
+    /* background: skyblue; */
+    width: 95%;
+    /* height: calc(100% - 45vh); */
+    height: 40%;
+    position: relative;
+    top: 23vh;
+    left: 1vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    gap: 15px;
+    border-radius: 35px 5px;
+    transition: all 1.5s ease-in;
+}
+.user-profile .user-info span{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.user-profile .user-dp:hover img, .user-profile .user-dp:hover figcaption{
+    background: rgb(11, 167, 89);
+    transform: scale(1.2);
+    transition: all 1s ease-in-out;
+}
+.user-profile .user-info:hover{
+    background: rgb(11, 167, 89);
+    transform: scale(1.2) translate(60px);
+    transition: all .5s ease;
+}

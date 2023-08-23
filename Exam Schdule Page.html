@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Schdule Page</title>
+    <link rel="stylesheet" href="Exam Schdule Page.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="Seat View Page.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header class="header-box">
+    <div class="logo-box">
+      <a href="https://uttarauniversity.edu.bd/" class="logo-icon">
+        <img src="Images/Copy of UU New logo (3).png" alt="">
+      </a>
+    </div>
+    <nav class="nav-container">
+      <ul class="nav-sub-container">
+          <li class="nav-sub-container-list">
+              <a href="" class="nav-sub-container-list-link" id="link1">
+                  <i class='bx bx-home'></i>
+                  <span>Home</span>
+              </a>
+          </li>
+          <li class="nav-sub-container-list">
+              <a href="" class="nav-sub-container-list-link" id="link2">
+                <i class='bx bx-envelope'></i>
+                <span>Mail Box</span>
+              </a>
+          </li>
+          <li class="nav-sub-container-list">
+              <a href="" class="nav-sub-container-list-link" id="link3">
+                <i class='bx bx-bell'></i>
+                <span>Notification</span>
+              </a>
+          </li>
+          <li class="nav-sub-container-list">
+              <a href="" class="nav-sub-container-list-link" id="link4">
+                <i class='bx bxs-color'></i>
+                <span>ERP</span>
+              </a>
+          <li class="nav-sub-container-list">
+            <a href="" class="nav-sub-container-list-link" id="link4">
+              <i class='bx bx-log-out'></i>
+              <span>Log Out</span>
+            </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  
+  <div class="label-area">
+    <h2>UU - Exam Schedule Board</h2>
+  </div>
+
+
+
+   <!-- Form - FieldSet -->
+  <form action="" class="seat-view schedule">
+    <fieldset class="radio-div">
+      <!-- <legend class="legend1">Select Required Items</legend> -->
+      <div class="semester">
+          <label for="">Semester:</label>
+          <!-- <br> -->
+          <input type="radio" id="Spring" name="semester" value="Spring">
+          <label for="Spring">Spring</label>
+          <input type="radio" id="Summer" name="semester" value="Summer">
+          <label for="Summer">Summer</label>
+      </div>
+
+      <div class="year">
+          <label for="year">Year:</label>
+          <select class="year-select" id="year" name="year">
+              <option value=""></option>
+              <option value="2003">2003</option>
+              <option value="2004">2004</option>
+              <option value="2005">2005</option>
+              <option value="2006">2006</option>
+              <option value="2007">2007</option>
+              <option value="2008">2008</option>
+              <option value="2009">2009</option>
+              <option value="2010">2010</option>
+              <option value="2011">2011</option>
+              <option value="2012">2012</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+          </select>
+      </div>
+    
+      <div class="dept">
+          <label for="dept">Department</label>
+          <select name="dept" id="dept" class="dept-select">
+              <option value=""></option>
+              <option value="cse">CSE</option>
+              <option value="eee">EEE</option>
+              <option value="english">English</option>
+              <option value="math">Math</option>
+              <option value="bangla">Bangla</option>
+              <option value="fdt">FDT</option>
+              <option value="bba">BBA</option>
+          </select>
+      </div>
+      <div class="batch">
+        <label for="batch">Batch:</label>
+        <select name="batch" id="batch" class="batch-select">
+            <option value=""></option>
+            <option value="49">49</option>
+            <option value="50">50</option>
+            <option value="51">51</option>
+            <option value="52">52</option>
+            <option value="53">53</option>
+            <option value="54">54</option>
+            <option value="55">55</option>
+            <option value="56">56</option>
+            <option value="57">57</option>
+            <option value="58">58</option>
+            <option value="59">59</option>
+            <option value="60">60</option>
+        </select>
+    </div>
+    <div class="batch-time">
+      <label for="time">Batch Time:</label>
+      <input type="radio" name="day" id="day">
+      <label for="day">Day</label>
+      <input type="radio" name="evening" id="evening">
+      <label for="evening">Evening</label>
+   </div>
+          
+          <div class="exam-term">
+              <label for="term">Exam Term:</label>
+              <input type="radio" name="mid" id="mid">
+              <label for="mid">Mid</label>
+              <input type="radio" name="Final" id="Final">
+              <label for="Final">Final</label>
+          </div>
+          <div class="exam-type">
+              <label for="term">Exam Type:</label>
+              <input type="radio" name="regular" id="regular">
+              <label for="regular">Regular</label>
+              <input type="radio" name="make-up" id="make-up">
+              <label for="make-up">Make-up</label>
+          </div>
+          <div class="date">
+              <label for="exam-date">Date</label>
+              <input type="date" name="exam-date" id="exam-date">
+          </div>
+          <div class="submit">
+            <button type="submit" id="submit">
+              <span class="label">View Schedule</span>
+            </button>
+          </div>
+    </fieldset>
+   </form>
+
+
+  <div class="button">
+    <a href="Student Dashboard_Side-Nav.html">
+      <button class="back-button">
+        Back
+      </button>
+    </a>
+    <a href="Index.html">
+      <button class="back-button">
+        Root
+      </button>
+    </a>
+  </div>
+ 
+  
+</body>
+</html>

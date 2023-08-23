@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Admin Home Page.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="Admin_Day_Batch..css">
+    <!-- Box icon CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Day Batch Student Page</title>
+</head>
+<body>
+    <header class="header-box">
+      <div class="logo-box">
+        <a href="https://uttarauniversity.edu.bd/" class="logo-icon">
+          <img src="Images/Copy of UU New logo (3).png" alt="">
+        </a>
+      </div>
+      <nav class="nav-container">
+        <ul class="nav-sub-container">
+            <li class="nav-sub-container-list">
+                <a href="Admin Home Page.html" class="nav-sub-container-list-link" id="link1">
+                    <i class='bx bx-home'></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-sub-container-list">
+                <a href="https://mail.google.com/" class="nav-sub-container-list-link" id="link2">
+                  <i class='bx bx-envelope'></i>
+                  <span>Mail Box</span>
+                </a>
+            </li>
+            <li class="nav-sub-container-list">
+                <a href="#" class="nav-sub-container-list-link" id="link3">
+                  <i class='bx bx-bell'></i>
+                  <span>Notification</span>
+                </a>
+            </li>
+            <li class="nav-sub-container-list">
+                <a href="https://erp.uttarauniversity.edu.bd/" class="nav-sub-container-list-link" id="link4">
+                  <i class='bx bxs-color'></i>
+                  <span>ERP</span>
+                </a>
+            <li class="nav-sub-container-list">
+                <a href="#" class="nav-sub-container-list-link" id="link4">
+                  <i class='bx bx-user' ></i>
+                  <span>Admin1</span>
+                </a>
+            </li>
+            <li class="nav-sub-container-list">
+              <a href="#" class="nav-sub-container-list-link" id="link4">
+                <i class='bx bx-log-out'></i>
+                <span>Log Out</span>
+              </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+
+      <div class="f-area day-field">
+        <h1>UU - Department of</h1>
+      </div>
+    
+      <!-- Admin Action Zone -->
+      <nav class="side-navbar">
+        <ul class="side-navbar-ul">
+          <li class="side-navbar-li" id="li1">
+            <a href="Admin Home Page.html" class="link-name">
+              <i class='bx bxs-dashboard'></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+            <li class="side-navbar-li" id="list1">
+              <a href="#">
+                <i class='bx bx-group'></i>
+                <Span class="side-navbar-link-name">Student</Span>
+                <ul class="side-navbar-sub_ul">
+                  <li class="side-navbar-sub_li">
+                    <a href="Admin_Day_Batch.html">
+                      <i class='bx bx-time-five'></i>
+                      <Span class="side-navbar-sub_li-link-name">Day</Span>
+                    </a>
+                  </li>
+                  <li class="side-navbar-sub_li">
+                    <a href="#">
+                      <i class='bx bx-time-five'></i>
+                      <Span class="side-navbar-sub_li-link-name">Evening</Span>
+                    </a>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li class="side-navbar-li" id="side-navbar-li2">
+              <a href="#">
+                <i class='bx bx-group'></i>
+                <span class="side-navbar-link-name">Faculty</span>
+              </a>
+            </li>
+    
+            <li class="side-navbar-li" id="side-navbar-li3">
+              <a href="#">
+                <i class='bx bx-file'></i>
+                <span class="side-navbar-link-name">Exam Permit</span>
+                  <ul class="side-navbar-sub_ul upload-file-ul">
+                    <li class="side-navbar-sub_li upload-file-li">
+                        <input type="file" id="upload" accept=".doc, .docx, .pdf, .xls, .xlsx" onchange="displayFileName()">
+                        <label for="upload" class="custom-file-upload">Upload file</label>
+                        <!-- <p id="file-name">No file chosen</p> -->
+                    </li>
+                  </ul>
+              </a>
+            </li>
+            <li class="side-navbar-li" id="side-navbar-li3">
+              <a href="Admin-ExamSchedule Page.html">
+                <i class='bx bxs-watch'></i>
+                <span class="side-navbar-link-name">Exam Schdule</span>
+                  <ul class="side-navbar-sub_ul upload-file-ul">
+                    <li class="side-navbar-sub_li upload-file-li">
+                        <input type="file" id="upload" accept=".doc, .docx, .pdf, .xls, .xlsx" onchange="displayFileName()">
+                        <label for="upload" class="custom-file-upload">Upload file</label>
+                        <!-- <p id="file-name">No file chosen</p> -->
+                    </li>
+                  </ul>
+              </a>
+            </li>
+            <li class="side-navbar-li" id="side-navbar-li3">
+              <a href="#">
+                <i class='bx bx-chair'></i>
+                <span class="side-navbar-link-name">Seat Plan</span>
+                  <ul class="side-navbar-sub_ul upload-file-ul">
+                    <li class="side-navbar-sub_li upload-file-li">
+                        <input type="file" id="upload" accept=".doc, .docx, .pdf, .xls, .xlsx" onchange="displayFileName()">
+                        <label for="upload" class="custom-file-upload">Upload file</label>
+                        <!-- <p id="file-name">No file chosen</p> -->
+                    </li>
+                  </ul>
+              </a>
+            </li>
+            <li class="side-navbar-li" id="side-navbar-li3">
+              <a href="#">
+                <i class='bx bxs-torch'></i>
+                <span class="side-navbar-link-name">Invigilator</span>
+              </a>
+            </li>
+            <li class="side-navbar-li" id="side-navbar-li3">
+              <a href="#">
+                <i class='bx bx-cog' ></i>
+                <span class="side-navbar-link-name">Settings</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+
+            <!-- Dept Names -->
+            <div class="dept-names">
+                <div class="dept-name-sub_div suv_div1">
+                    <ul class="dept-names-ul ul1">
+                        <li class="dept-names-li">
+                            <a href="CSE_Std_List.html" class="dept-names-link">
+                                <img src="/Images/desktop_windows_CSE.svg" alt="">
+                                <span>COMPUTER SCIENCE &
+                                    ENGINEERING</span>
+                            </a>
+                        </li>
+                        <li class="dept-names-li">
+                            <a href="#" class="dept-names-link">
+                                <img src="Images/developer_board_white_24dp.svg" alt="">
+                                <span>ELECTRICAL &
+                                    ELECTRONIC ENGINEERING</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dept-name-sub_div suv_div2">
+                    <ul class="dept-names-ul ul2">
+                        <li class="dept-names-li">
+                            <a href="#" class="dept-names-link">
+                                <img src="/Images/business_white_24dp.svg" alt="">
+                                <span>BUSINESS ADMINISTRATION</span>
+                            </a>
+                        </li>
+                        <li class="dept-names-li">
+                            <a href="#" class="dept-names-link">
+                                <img src="/Images/palette_white_FDT.svg" alt="">
+                                <span>FASHION DESIGN & TECHNOLOGY</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dept-name-sub_div suv_div3">
+                    <ul class="dept-names-ul ul3">
+                        <li class="dept-names-li">
+                            <a href="#" class="dept-names-link">
+                                <img src="Images/gravel_Law.svg" alt="">
+                                <span>LAW</span>
+                            </a>
+                        </li>
+                        <li class="dept-names-li">
+                            <a href="#" class="dept-names-link">
+                                <img src="Images/foundation_white_civil.svg" alt="">
+                                <span>CIVIL ENGINEERING</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dept-name-sub_div suv_div4">
+                    <ul class="dept-names-ul ul4">
+                        <li class="dept-names-li">
+                            <a href="#" class="dept-names-link">
+                                <img src="Images/curtains_white_textile.svg" alt="">
+                                <span>TEXTILE ENGINEERING</span>
+                            </a>
+                        </li>
+                        <li class="dept-names-li">
+                            <a href="#" class="dept-names-link">
+                                <img src="Images/functions_white_math.svg" alt="">
+                                <span>MATHEMATICS</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dept-name-sub_div suv_div5">
+                    <ul class="dept-names-ul ul5">
+                        <li class="dept-names-li">
+                            <a href="#" class="dept-names-link">
+                                <img src="/Images/icons8-english-24.png" alt="">
+                                <span>ENGLISH</span>
+                            </a>
+                        </li>
+                        <li class="dept-names-li">
+                            <a href="#" class="dept-names-link">
+                                <img src="Images/icons8-flower-24.png" alt="">
+                                <span>BANGLA</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dept-name-sub_div suv_div6">
+                    <ul class="dept-names-ul ul6">
+                        <li class="dept-names-li">
+                            <a href="#" class="dept-names-link">
+                                <img src="Images/icons8-physics-24.png" alt="">
+                                <span>PHYSICS</span>
+                            </a>
+                        </li>
+                        </li>
+                        <li class="dept-names-li">
+                            <a href="#" class="dept-names-link">
+                                <img src="Images/icons8-islam-24.png" alt="">
+                                <span>ISLAMIC STUDIES</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+      
+      <div class="button-day" id="button-day">
+        <a href="Admin Login Page.html">
+          <button class="back-button">
+            Back
+          </button>
+        </a>
+        <a href="Index.html">
+          <button class="back-button">
+            Root
+          </button>
+        </a>
+      </div>
+     
+      <!-- <div id="date">
+        <script src="date-object.js"></script>
+      </div> -->
+</body>
+</html>

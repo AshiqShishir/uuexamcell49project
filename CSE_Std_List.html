@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Admin Home Page.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="Admin_Day_Batch..css">
+    <link rel="stylesheet" href="CSE_Std_List.css">
+    <!-- Box icon CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Day Batch Student Page</title>
+</head>
+<body>
+    <header class="header-box">
+      <div class="logo-box">
+        <a href="https://uttarauniversity.edu.bd/" class="logo-icon">
+          <img src="Images/Copy of UU New logo (3).png" alt="">
+        </a>
+      </div>
+      <nav class="nav-container">
+        <ul class="nav-sub-container">
+            <li class="nav-sub-container-list">
+                <a href="Admin Home Page.html" class="nav-sub-container-list-link" id="link1">
+                    <i class='bx bx-home'></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-sub-container-list">
+                <a href="https://mail.google.com/" class="nav-sub-container-list-link" id="link2">
+                  <i class='bx bx-envelope'></i>
+                  <span>Mail Box</span>
+                </a>
+            </li>
+            <li class="nav-sub-container-list">
+                <a href="#" class="nav-sub-container-list-link" id="link3">
+                  <i class='bx bx-bell'></i>
+                  <span>Notification</span>
+                </a>
+            </li>
+            <li class="nav-sub-container-list">
+                <a href="https://erp.uttarauniversity.edu.bd/" class="nav-sub-container-list-link" id="link4">
+                  <i class='bx bxs-color'></i>
+                  <span>ERP</span>
+                </a>
+            <li class="nav-sub-container-list">
+                <a href="#" class="nav-sub-container-list-link" id="link4">
+                  <i class='bx bx-user' ></i>
+                  <span>Admin1</span>
+                </a>
+            </li>
+            <li class="nav-sub-container-list">
+              <a href="#" class="nav-sub-container-list-link" id="link4">
+                <i class='bx bx-log-out'></i>
+                <span>Log Out</span>
+              </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+
+      <div class="f-area cse-day-field">
+        <h1>UU - Department of Computer Science & Engineering</h1>
+        <h3>Student List</h3>
+      </div>
+    
+      <!-- Admin Action Zone -->
+      <nav class="side-navbar">
+        <ul class="side-navbar-ul">
+            <li class="side-navbar-li" id="li1">
+                <a href="Admin Home Page.html" class="link-name">
+                  <i class='bx bxs-dashboard'></i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+            <li class="side-navbar-li" id="list1">
+              <a href="#">
+                <i class='bx bx-group'></i>
+                <Span class="side-navbar-link-name">Student</Span>
+                <ul class="side-navbar-sub_ul">
+                  <li class="side-navbar-sub_li">
+                    <a href="Admin_Day_Batch.html">
+                      <i class='bx bx-time-five'></i>
+                      <Span class="side-navbar-sub_li-link-name">Day</Span>
+                    </a>
+                  </li>
+                  <li class="side-navbar-sub_li">
+                    <a href="#">
+                      <i class='bx bx-time-five'></i>
+                      <Span class="side-navbar-sub_li-link-name">Evening</Span>
+                    </a>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li class="side-navbar-li" id="side-navbar-li2">
+              <a href="#">
+                <i class='bx bx-group'></i>
+                <span class="side-navbar-link-name">Faculty</span>
+              </a>
+            </li>
+    
+            <li class="side-navbar-li" id="side-navbar-li3">
+              <a href="#">
+                <i class='bx bx-file'></i>
+                <span class="side-navbar-link-name">Exam Permit</span>
+                  <ul class="side-navbar-sub_ul upload-file-ul">
+                    <li class="side-navbar-sub_li upload-file-li">
+                        <input type="file" id="upload" accept=".doc, .docx, .pdf, .xls, .xlsx" onchange="displayFileName()">
+                        <label for="upload" class="custom-file-upload">Upload file</label>
+                        <!-- <p id="file-name">No file chosen</p> -->
+                    </li>
+                  </ul>
+              </a>
+            </li>
+            <li class="side-navbar-li" id="side-navbar-li3">
+              <a href="Admin-ExamSchedule Page.html">
+                <i class='bx bxs-watch'></i>
+                <span class="side-navbar-link-name">Exam Schdule</span>
+                  <ul class="side-navbar-sub_ul upload-file-ul">
+                    <li class="side-navbar-sub_li upload-file-li">
+                        <input type="file" id="upload" accept=".doc, .docx, .pdf, .xls, .xlsx" onchange="displayFileName()">
+                        <label for="upload" class="custom-file-upload">Upload file</label>
+                        <!-- <p id="file-name">No file chosen</p> -->
+                    </li>
+                  </ul>
+              </a>
+            </li>
+            <li class="side-navbar-li" id="side-navbar-li3">
+              <a href="#">
+                <i class='bx bx-chair'></i>
+                <span class="side-navbar-link-name">Seat Plan</span>
+                  <ul class="side-navbar-sub_ul upload-file-ul">
+                    <li class="side-navbar-sub_li upload-file-li">
+                        <input type="file" id="upload" accept=".doc, .docx, .pdf, .xls, .xlsx" onchange="displayFileName()">
+                        <label for="upload" class="custom-file-upload">Upload file</label>
+                        <!-- <p id="file-name">No file chosen</p> -->
+                    </li>
+                  </ul>
+              </a>
+            </li>
+            <li class="side-navbar-li" id="side-navbar-li3">
+              <a href="#">
+                <i class='bx bxs-torch'></i>
+                <span class="side-navbar-link-name">Invigilator</span>
+              </a>
+            </li>
+            <li class="side-navbar-li" id="side-navbar-li3">
+              <a href="#">
+                <i class='bx bx-cog' ></i>
+                <span class="side-navbar-link-name">Settings</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+
+           <!-- Batch Name Side Bar -->
+           <nav class="batch-side-nav-container">
+            <span class="span1">Batch</span>
+            <ul class="batch-side-nav-ul">
+                <li class="batch-side-nav-li">
+                    <a href="" class="batch-link-name">
+                        <span>49</span>
+                    </a>
+                </li>
+                <li class="batch-side-nav-li">
+                    <a href="" class="batch-link-name">
+                        <span>50</span>
+                    </a>
+                </li>
+                <li class="batch-side-nav-li">
+                    <a href="" class="batch-link-name">
+                        <span>51</span>
+                    </a>
+                </li>
+                <li class="batch-side-nav-li">
+                    <a href="" class="batch-link-name">
+                        <span>52</span>
+                    </a>
+                </li>
+                <li class="batch-side-nav-li">
+                    <a href="" class="batch-link-name">
+                        <span>53</span>
+                    </a>
+                </li>
+                <li class="batch-side-nav-li">
+                    <a href="" class="batch-link-name">
+                        <span>54</span>
+                    </a>
+                </li>
+                <li class="batch-side-nav-li">
+                    <a href="" class="batch-link-name">
+                        <span>55</span>
+                    </a>
+                </li>
+                <li class="batch-side-nav-li">
+                    <a href="" class="batch-link-name">
+                        <span>56</span>
+                    </a>
+                </li>
+                <li class="batch-side-nav-li">
+                    <a href="" class="batch-link-name">
+                        <span>57</span>
+                    </a>
+                </li>
+                <li class="batch-side-nav-li">
+                    <a href="" class="batch-link-name">
+                        <span>58</span>
+                    </a>
+                </li>
+                <li class="batch-side-nav-li">
+                    <a href="" class="batch-link-name">
+                        <span>59</span>
+                    </a>
+                </li>
+                <li class="batch-side-nav-li">
+                    <a href="" class="batch-link-name">
+                        <span>60</span>
+                    </a>
+                </li>
+            </ul>
+           </nav>
+
+
+    <!-- Table -->
+    <table class="table-container1">
+        <thead class="table-head">
+            <tr class="table-head-row">
+                <th class="table-head-names">Id</th>
+                <th class="table-head-names">Name</th>
+                <th class="table-head-names">Permit Access</th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+            <tr class="table-body-row">
+                <td class="table-head-value">2193081042</td>
+                <td class="table-head-value">Md. Ashiqul Islam Khan Shishir</td>
+                <td class="table-head-value">Yes</td>
+            </tr>
+            <tr class="table-body-row">
+                <td class="table-head-value">2193081045</td>
+                <td class="table-head-value">Abdur  Rahman Talha</td>
+                <td class="table-head-value">Yes</td>
+            </tr>
+            <tr class="table-body-row">
+                <td class="table-head-value">2193081046</td>
+                <td class="table-head-value">Hasibul Islam</td>
+                <td class="table-head-value">No</td>
+            </tr>
+            <tr class="table-body-row">
+                <td class="table-head-value">2193081049</td>
+                <td class="table-head-value">Touhidur Rahman</td>
+                <td class="table-head-value">No</td>
+            </tr>
+            <tr class="table-body-row">
+                <td class="table-head-value">2193081050</td>
+                <td class="table-head-value">Rahul Sarkar</td>
+                <td class="table-head-value">No</td>
+            </tr>
+            <tr class="table-body-row">
+                <td class="table-head-value">2193081052</td>
+                <td class="table-head-value">Soma Akter</td>
+                <td class="table-head-value">Yes</td>
+            </tr>
+            <tr class="table-body-row">
+                <td class="table-head-value">2193081055</td>
+                <td class="table-head-value">Tohura Sarkar</td>
+                <td class="table-head-value">Yes</td>
+            </tr>
+            <tr class="table-body-row">
+                <td class="table-head-value">2193081057</td>
+                <td class="table-head-value">Md. Imam Hossain</td>
+                <td class="table-head-value">No</td>
+            </tr>
+            <tr class="table-body-row">
+                <td class="table-head-value">2193081058</td>
+                <td class="table-head-value">Md. Tofayel Ahmed</td>
+                <td class="table-head-value">No</td>
+            </tr>
+            <tr class="table-body-row">
+                <td class="table-head-value">2193081068</td>
+                <td class="table-head-value">Marium Akter</td>
+                <td class="table-head-value">Yes</td>
+            </tr>
+            <tr class="table-body-row">
+                <td class="table-head-value">2193081071</td>
+                <td class="table-head-value">Tonmoy Mahmud</td>
+                <td class="table-head-value">Yes</td>
+            </tr>
+            <tr class="table-body-row">
+                <td class="table-head-value">2193081075</td>
+                <td class="table-head-value">Sharmin Akter</td>
+                <td class="table-head-value">Yes</td>
+            </tr>
+        </tbody>
+    </table>
+
+      
+      <div class="button-day" id="button-day">
+        <a href="Admin Login Page.html">
+          <button class="back-button">
+            Back
+          </button>
+        </a>
+        <a href="Index.html">
+          <button class="back-button">
+            Root
+          </button>
+        </a>
+      </div>
+     
+      <!-- <div id="date">
+        <script src="date-object.js"></script>
+      </div> -->
+</body>
+</html>

@@ -1,0 +1,2344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(3, 122, 122);
+    background-image: url(Images/classroom-big-size.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+    margin: 0;
+    padding: 0;    
+}
+
+
+.label-area{
+    width: 25vw;
+    position: absolute;
+    top: 50vh;
+    left: 4vw;
+    background-color: rgba(9, 46, 82, 0.815);
+    text-align: center;
+    border: 2px solid rgba(4, 34, 61, 0.158);
+    border-radius: 20px 5px;
+    display: inline-block;
+}
+.label-area h2{
+    font-size: 2vw;
+    color: #e3e5ec;
+}
+
+
+
+/*    
+        
+        Field Set CSS 
+        
+*/
+
+.seat-view{
+    width: 40vw;
+    height: 64vh;
+    /* background: yellowgreen; */
+    position: absolute;
+    left: 45vw;
+    bottom: 6vh;
+}
+.seat-view .radio-div{
+    width: 40vw;
+    height: 58vh;
+    /* position: relative;
+    top: 6vh; */
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    /* flex-direction: column; */
+    /* justify-content: space-evenly; */
+    background-color: rgba(18, 149, 158, 0.747);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1.2vw groove rgba(3, 3, 51, 0.815);
+}
+
+
+.semester{
+    padding: 2px 2px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 2vw;
+    top: 2vh;
+    font-size: 1.2vw;
+    /* justify-self: center; */
+    /* background-color: yellowgreen; */
+}
+
+.year{
+    margin: 15px 1px;
+    position: relative;
+    left: 1vw;
+    font-size: 1.2vw;
+    /* background-color: antiquewhite; */
+}
+.date{
+    /* background-color: orange; */
+    margin: 15px 1px;
+    position: relative;
+    left: 2vw;
+    font-size: 1.2vw;
+
+}
+
+.batch{
+    /* background-color: crimson; */
+    margin: 15px 1px;
+    position: relative;
+    left: 1vw;
+    font-size: 1.2vw;
+}
+
+.section{
+    /* background-color: orange; */
+    position: relative;
+    left: 2vw;
+    font-size: 1.2vw;
+    margin: 15px 1px;
+
+}
+.dept{
+    margin: 15px 1px;
+    position: relative;
+    left: 2vw;
+    font-size: 1.2vw;
+}
+
+.exam-term{
+    /* background-color: darkkhaki; */
+    margin: 15px 1px;
+    position: relative;
+    left: 2vw;
+    font-size: 1.2vw;
+}
+.exam-type{
+    margin: 15px 1px;
+    position: relative;
+    left: 1vw;
+    font-size: 1.2vw;
+}
+.batch-time{
+    /* background-color: darkkhaki; */
+    margin: 15px 1px;
+    position: relative;
+    left: 1vw;
+    font-size: 1.2vw;
+}
+
+.submit button{
+    background-color: rgba(66, 194, 226, 0.781);
+    font-weight: bold;
+    font-size: .8vw;
+    width: 8vw;
+    height: 7vh;
+    position: absolute;
+    right: 14vw;
+    top: 15vh;
+    
+}
+.submit{
+    position: relative;
+    left: 26vw;
+    bottom: 10vh;
+    width: 4vw;
+    
+}
+
+
+/* 
+
+
+
+            Medea Queries
+
+
+
+
+*/
+/* 
+
+            For SmartPhones 
+
+
+*/
+/* 
+
+          Viewport: 360x640
+
+*/
+@media (width: 360px){
+    body{
+        background-image: url(Images/classroom-big-size.webp);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        margin: 0;
+        padding: 0;
+    }
+    .label-area{
+        width: 35vw;
+        position: absolute;
+        top: 5vh;
+        left: 45vw;
+        background-color: rgba(13, 58, 97, 0.856);
+        text-align: center;
+        border: 2px solid rgba(240, 248, 255, 0.158);
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .label-area h2{
+        font-size: 4vw;
+    }
+    
+    .radio-div{
+        width: 35vw;
+        height: 60vh;
+        position: absolute;
+        left: 23vh;
+        bottom: 15vh;
+        background-color: rgba(207, 207, 16, 0.644);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 3.2vw groove rgba(42, 133, 15, 0.815);
+    }
+    .legend1{
+        font-size: 3vw;
+        font-weight: 900;
+    }
+    
+    .semester{
+        padding: 2px 2px;
+        margin-bottom: 5px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+        /* background-color: yellowgreen; */
+    }
+    
+    .year{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+        /* background-color: antiquewhite; */
+    }
+    
+    .batch{
+        /* background-color: crimson; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    
+    .section{
+        /* background-color: orange; */
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    
+    }
+    
+    .exam-term{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .exam-type{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .batch-time{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .date{
+        /* background-color: orange; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .date input{
+        height: 2vh;
+        width: 26vw;
+        position: relative;
+        top: .6vh;
+    }
+    .dept{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .dept select{
+        width: 10vw;
+    }
+    .batch select{
+        width: 8vw;
+    }
+    .date input{
+        position: relative;
+        top: .2vh;
+        width: 26vw;
+    }
+    
+    .submit button{
+        background-color: rgba(48, 121, 139, 0.781);
+        font-weight: bolder;
+        font-size: 2vw;
+        width: 16vw;
+        height: 4vh;
+        
+    }
+    .submit{
+        position: relative;
+        left: 11vw;
+        top: 5vh;
+        width: 4vw;
+        
+    }
+    .submit button span{
+        position: relative;
+        right: 1.2vw;
+    }
+    
+}
+/* 
+
+            Viewport: 375x667
+
+*/
+@media (width: 375px){
+    body{
+        background-image: url(Images/classroom-big-size.webp);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        margin: 0;
+        padding: 0;
+    }
+    .label-area{
+        width: 35vw;
+        position: absolute;
+        top: 5vh;
+        left: 45vw;
+        background-color: rgba(13, 58, 97, 0.856);
+        text-align: center;
+        border: 2px solid rgba(240, 248, 255, 0.158);
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .label-area h2{
+        font-size: 4vw;
+    }
+    
+    .radio-div{
+        width: 35vw;
+        height: 60vh;
+        position: absolute;
+        left: 23vh;
+        bottom: 15vh;
+        background-color: rgba(207, 207, 16, 0.644);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 3.2vw groove rgba(42, 133, 15, 0.815);
+    }
+    .legend1{
+        font-size: 3vw;
+        font-weight: 900;
+    }
+    
+    .semester{
+        padding: 2px 2px;
+        margin-bottom: 5px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+        /* background-color: yellowgreen; */
+    }
+    
+    .year{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+        /* background-color: antiquewhite; */
+    }
+    
+    .batch{
+        /* background-color: crimson; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    
+    .section{
+        /* background-color: orange; */
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    
+    }
+    
+    .exam-term{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .exam-type{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .batch-time{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .date{
+        /* background-color: orange; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .date input{
+        height: 2vh;
+        width: 26vw;
+        position: relative;
+        top: .6vh;
+    }
+    .dept{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .dept select{
+        width: 10vw;
+    }
+    .batch select{
+        width: 8vw;
+    }
+    .date input{
+        position: relative;
+        top: .2vh;
+        width: 26vw;
+    }
+    
+    .submit button{
+        background-color: rgba(48, 121, 139, 0.781);
+        font-weight: bolder;
+        font-size: 2vw;
+        width: 16vw;
+        height: 4vh;
+        
+    }
+    .submit{
+        position: relative;
+        left: 11vw;
+        top: 5vh;
+        width: 4vw;
+        
+    }
+    .submit button span{
+        position: relative;
+        right: 1.2vw;
+    }
+    
+    
+}
+/* 
+
+            Viewport: 390x844
+
+*/
+@media (width: 390px){
+    body{
+        background-image: url(Images/classroom-big-size.webp);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        margin: 0;
+        padding: 0;
+    }
+    .label-area{
+        width: 35vw;
+        position: absolute;
+        top: 5vh;
+        left: 45vw;
+        background-color: rgba(13, 58, 97, 0.856);
+        text-align: center;
+        border: 2px solid rgba(240, 248, 255, 0.158);
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .label-area h2{
+        font-size: 4vw;
+    }
+    
+    .radio-div{
+        width: 35vw;
+        height: 50vh;
+        position: absolute;
+        left: 18vh;
+        bottom: 15vh;
+        background-color: rgba(207, 207, 16, 0.644);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 3.2vw groove rgba(42, 133, 15, 0.815);
+    }
+    .legend1{
+        font-size: 3vw;
+        font-weight: 900;
+    }
+    
+    .semester{
+        padding: 2px 2px;
+        margin-bottom: 5px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+        /* background-color: yellowgreen; */
+    }
+    
+    .year{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+        /* background-color: antiquewhite; */
+    }
+    
+    .batch{
+        /* background-color: crimson; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    
+    .section{
+        /* background-color: orange; */
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    
+    }
+    
+    .exam-term{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .exam-type{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .batch-time{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .date{
+        /* background-color: orange; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .date input{
+        height: 2vh;
+        width: 26vw;
+        position: relative;
+        top: .6vh;
+    }
+    .dept{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .dept select{
+        width: 10vw;
+    }
+    .batch select{
+        width: 8vw;
+    }
+    .date input{
+        position: relative;
+        top: .2vh;
+        width: 26vw;
+    }
+    
+    .submit button{
+        background-color: rgba(48, 121, 139, 0.781);
+        font-weight: bolder;
+        font-size: 2vw;
+        width: 16vw;
+        height: 4vh;
+        
+    }
+    .submit{
+        position: relative;
+        left: 11vw;
+        top: 5vh;
+        width: 4vw;
+        
+    }
+    .submit button span{
+        position: relative;
+        right: 1.2vw;
+    }
+    
+    
+}
+/* 
+
+            Viewport: 414x896
+
+*/
+@media (width: 414px){
+    body{
+        background-image: url(Images/classroom-big-size.webp);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        margin: 0;
+        padding: 0;
+    }
+    .label-area{
+        width: 35vw;
+        position: absolute;
+        top: 5vh;
+        left: 45vw;
+        background-color: rgba(13, 58, 97, 0.856);
+        text-align: center;
+        border: 2px solid rgba(240, 248, 255, 0.158);
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .label-area h2{
+        font-size: 4vw;
+    }
+    
+    .radio-div{
+        width: 35vw;
+        height: 52vh;
+        position: absolute;
+        left: 20vh;
+        bottom: 15vh;
+        background-color: rgba(207, 207, 16, 0.644);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 3.2vw groove rgba(42, 133, 15, 0.815);
+    }
+    .legend1{
+        font-size: 3vw;
+        font-weight: 900;
+    }
+    
+    .semester{
+        padding: 2px 2px;
+        margin-bottom: 5px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+        /* background-color: yellowgreen; */
+    }
+    
+    .year{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+        /* background-color: antiquewhite; */
+    }
+    
+    .batch{
+        /* background-color: crimson; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    
+    .section{
+        /* background-color: orange; */
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    
+    }
+    
+    .exam-term{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .exam-type{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .batch-time{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .date{
+        /* background-color: orange; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .date input{
+        height: 2vh;
+        width: 26vw;
+        position: relative;
+        top: .6vh;
+    }
+    .dept{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .dept select{
+        width: 10vw;
+    }
+    .batch select{
+        width: 8vw;
+    }
+    .date input{
+        position: relative;
+        top: .2vh;
+        width: 26vw;
+    }
+    
+    .submit button{
+        background-color: rgba(48, 121, 139, 0.781);
+        font-weight: bolder;
+        font-size: 2vw;
+        width: 16vw;
+        height: 4vh;
+        
+    }
+    .submit{
+        position: relative;
+        left: 11vw;
+        top: 5vh;
+        width: 4vw;
+        
+    }
+    .submit button span{
+        position: relative;
+        right: 1.2vw;
+    }
+    
+    
+}
+/* 
+
+            Viewport: 428x926
+
+*/
+@media (width: 428px){
+    body{
+        background-image: url(Images/classroom-big-size.webp);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        margin: 0;
+        padding: 0;
+    }
+    .label-area{
+        width: 35vw;
+        position: absolute;
+        top: 5vh;
+        left: 45vw;
+        background-color: rgba(13, 58, 97, 0.856);
+        text-align: center;
+        border: 2px solid rgba(240, 248, 255, 0.158);
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .label-area h2{
+        font-size: 4vw;
+    }
+    
+    .radio-div{
+        width: 35vw;
+        height: 48vh;
+        position: absolute;
+        left: 20vh;
+        bottom: 15vh;
+        background-color: rgba(207, 207, 16, 0.644);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 3.2vw groove rgba(42, 133, 15, 0.815);
+    }
+    .legend1{
+        font-size: 3vw;
+        font-weight: 900;
+    }
+    
+    .semester{
+        padding: 2px 2px;
+        margin-bottom: 5px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+        /* background-color: yellowgreen; */
+    }
+    
+    .year{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+        /* background-color: antiquewhite; */
+    }
+    
+    .batch{
+        /* background-color: crimson; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    
+    .section{
+        /* background-color: orange; */
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    
+    }
+    
+    .exam-term{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .exam-type{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .batch-time{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .date{
+        /* background-color: orange; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .date input{
+        height: 2vh;
+        width: 26vw;
+        position: relative;
+        top: .6vh;
+    }
+    .dept{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .dept select{
+        width: 10vw;
+    }
+    .batch select{
+        width: 8vw;
+    }
+    .date input{
+        position: relative;
+        top: .2vh;
+        width: 26vw;
+    }
+    
+    .submit button{
+        background-color: rgba(48, 121, 139, 0.781);
+        font-weight: bolder;
+        font-size: 2vw;
+        width: 16vw;
+        height: 4vh;
+        
+    }
+    .submit{
+        position: relative;
+        left: 11vw;
+        top: 5vh;
+        width: 4vw;
+        
+    }
+    .submit button span{
+        position: relative;
+        right: 1.2vw;
+    }
+    
+    
+}
+
+/* 
+            Viewport:  480 x 853
+
+*/
+@media (width: 480px){
+    body{
+        background-image: url(Images/classroom-big-size.webp);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        margin: 0;
+        padding: 0;
+    }
+    .label-area{
+        width: 35vw;
+        position: absolute;
+        top: 5vh;
+        left: 45vw;
+        background-color: rgba(13, 58, 97, 0.856);
+        text-align: center;
+        border: 2px solid rgba(240, 248, 255, 0.158);
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .label-area h2{
+        font-size: 4vw;
+    }
+    
+    .radio-div{
+        width: 35vw;
+        height: 50vh;
+        position: absolute;
+        left: 23vh;
+        bottom: 15vh;
+        background-color: rgba(207, 207, 16, 0.644);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 3.2vw groove rgba(42, 133, 15, 0.815);
+    }
+    .legend1{
+        font-size: 3vw;
+        font-weight: 900;
+    }
+    
+    .semester{
+        padding: 2px 2px;
+        margin-bottom: 5px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+        /* background-color: yellowgreen; */
+    }
+    
+    .year{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+        /* background-color: antiquewhite; */
+    }
+    
+    .batch{
+        /* background-color: crimson; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    
+    .section{
+        /* background-color: orange; */
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    
+    }
+    
+    .exam-term{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .exam-type{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .batch-time{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .date{
+        /* background-color: orange; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .date input{
+        height: 2vh;
+        width: 26vw;
+        position: relative;
+        top: .6vh;
+    }
+    .dept{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .dept select{
+        width: 10vw;
+    }
+    .batch select{
+        width: 8vw;
+    }
+    .date input{
+        position: relative;
+        top: .2vh;
+        width: 26vw;
+    }
+    
+    .submit button{
+        background-color: rgba(48, 121, 139, 0.781);
+        font-weight: bolder;
+        font-size: 2vw;
+        width: 16vw;
+        height: 4vh;
+        
+    }
+    .submit{
+        position: relative;
+        left: 11vw;
+        top: 5vh;
+        width: 4vw;
+        
+    }
+    .submit button span{
+        position: relative;
+        right: 1.2vw;
+    }
+    
+    
+}
+
+/*  
+
+        For Smartphones
+
+*/
+/* 
+
+    Small Screen
+
+    ViewPort: 600 to 767
+
+
+*/
+@media (min-width: 600px) and (max-width: 767px){
+    body{
+        background-image: url(Images/classroom-big-size.webp);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        margin: 0;
+        padding: 0;
+    }
+    .label-area{
+        width: 35vw;
+        position: absolute;
+        top: 5vh;
+        left: 45vw;
+        background-color: rgba(13, 58, 97, 0.856);
+        text-align: center;
+        border: 2px solid rgba(240, 248, 255, 0.158);
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .label-area h2{
+        font-size: 4vw;
+    }
+    
+    .radio-div{
+        width: 35vw;
+        height: 50vh;
+        position: absolute;
+        left: 28vh;
+        bottom: 15vh;
+        background-color: rgba(207, 207, 16, 0.644);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 3.2vw groove rgba(42, 133, 15, 0.815);
+    }
+    .legend1{
+        font-size: 3vw;
+        font-weight: 900;
+    }
+    
+    .semester{
+        padding: 2px 2px;
+        margin-bottom: 5px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+        /* background-color: yellowgreen; */
+    }
+    
+    .year{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+        /* background-color: antiquewhite; */
+    }
+    
+    .batch{
+        /* background-color: crimson; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    
+    .section{
+        /* background-color: orange; */
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    
+    }
+    
+    .exam-term{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .exam-type{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .batch-time{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .date{
+        /* background-color: orange; */
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .date input{
+        height: 2vh;
+        width: 26vw;
+        position: relative;
+        top: .6vh;
+    }
+    .dept{
+        margin: 15px 1px;
+        position: relative;
+        top: 3vh;
+        left: 1vw;
+        font-size: 2.6vw;
+    }
+    .dept select{
+        width: 10vw;
+    }
+    .batch select{
+        width: 8vw;
+    }
+    .date input{
+        position: relative;
+        top: .2vh;
+        width: 26vw;
+    }
+    
+    .submit button{
+        background-color: rgba(48, 121, 139, 0.781);
+        font-weight: bolder;
+        font-size: 2vw;
+        width: 16vw;
+        height: 4vh;
+        
+    }
+    .submit{
+        position: relative;
+        left: 11vw;
+        top: 5vh;
+        width: 4vw;
+        
+    }
+    .submit button span{
+        position: relative;
+        right: 1.2vw;
+    }
+}
+
+/* 
+
+
+                    For Tablet/Pads 
+
+
+
+*/
+/* 
+
+    Medium Screen
+
+        ViewPort:  768px to 834px
+*/
+
+@media (min-width: 768px) and (max-width:834px ){
+    body{
+        background-color: rgb(3, 122, 122);
+        background-image: url(/Images/classroom-big-size.webp);
+        background-repeat: no-repeat;
+        /* background-position: 320px 0px ; */
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        margin: 0;
+        padding: 0;    
+    }
+    
+    
+    .label-area{
+        width: 28vw;
+        position: absolute;
+        top: 50vh;
+        left: 4vw;
+        background-color: rgba(26, 68, 116, 0.815);
+        text-align: center;
+        border: 2px solid rgba(240, 248, 255, 0.158);
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .label-area h2{
+        font-size: 2.8vw;
+        color: #f7f7f7;
+    }
+    
+    
+    
+    /*    
+            
+            Field Set CSS 
+            
+    */
+    .legend1{
+        font-size: 3.2vw;
+        font-weight: 900;
+    }
+    
+    .radio-div{
+        width: 40vw;
+        height: 52vh;
+        position: absolute;
+        left: 40vw;
+        top: 30vh;
+        background-color: rgba(50, 161, 28, 0.644);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 1.2vw groove rgba(42, 133, 15, 0.815);
+    }
+    
+    
+    .semester{
+        padding: 2px 2px;
+        margin-bottom: 5px;
+        position: relative;
+        left: 4vw;
+        font-size: 3vw;
+        /* background-color: yellowgreen; */
+    }
+    
+    .year{
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 3vw;
+        /* background-color: antiquewhite; */
+    }
+    .date{
+        /* background-color: orange; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 3vw;
+    
+    }
+    
+    .batch{
+        /* background-color: crimson; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 3vw;
+    }
+    
+    .section{
+        /* background-color: orange; */
+        position: relative;
+        left: 4vw;
+        font-size: 3vw;
+    
+    }
+    .dept{
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 3vw;
+    }
+    
+    .exam-term{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 3vw;
+    }
+    .exam-type{
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 3vw;
+    }
+    .batch-time{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 3vw;
+    }
+    
+    .submit button{
+        background-color: rgba(66, 194, 226, 0.781);
+        font-weight: bold;
+        font-size: 2vw;
+        width: 16vw;
+        height: 4vh;
+        
+    }
+    .submit{
+        position: relative;
+        left: 14vw;
+        top: 4vh;
+        width: 4vw;
+        
+    }
+    
+}
+
+/* 
+
+    
+
+        ViewPort:  1280px
+*/
+
+@media (width: 1280px) {
+    body{
+        background-color: rgb(3, 122, 122);
+        background-image: url(/Images/classroom-big-size.webp);
+        background-repeat: no-repeat;
+        /* background-position: 320px 0px ; */
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        margin: 0;
+        padding: 0;    
+    }
+    
+    
+    .label-area{
+        width: 25vw;
+        position: absolute;
+        top: 50vh;
+        left: 4vw;
+        background-color: rgba(26, 68, 116, 0.815);
+        text-align: center;
+        border: 2px solid rgba(240, 248, 255, 0.158);
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .label-area h2{
+        font-size: 2vw;
+        color: #f7f7f7;
+    }
+    
+    
+    
+    /*    
+            
+            Field Set CSS 
+            
+    */
+    .legend1{
+        font-size: 2.2vw;
+        font-weight: 900;
+    }
+    
+    .radio-div{
+        width: 35vw;
+        height: 52vh;
+        position: absolute;
+        left: 45vw;
+        top: 30vh;
+        background-color: rgba(50, 161, 28, 0.644);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 1.2vw groove rgba(42, 133, 15, 0.815);
+    }
+    
+    
+    .semester{
+        padding: 2px 2px;
+        margin-bottom: 5px;
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+        /* background-color: yellowgreen; */
+    }
+    
+    .year{
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+        /* background-color: antiquewhite; */
+    }
+    .date{
+        /* background-color: orange; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+    
+    }
+    
+    .batch{
+        /* background-color: crimson; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+    }
+    
+    .section{
+        /* background-color: orange; */
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+    
+    }
+    .dept{
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+    }
+    
+    .exam-term{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+    }
+    .exam-type{
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+    }
+    .batch-time{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+    }
+    
+    .submit button{
+        background-color: rgba(66, 194, 226, 0.781);
+        font-weight: bold;
+        font-size: 1vw;
+        width: 9vw;
+        height: 4vh;
+        
+    }
+    .submit{
+        position: relative;
+        left: 14vw;
+        top: 1vh;
+        width: 4vw;
+        
+    }
+    
+   
+}
+
+
+
+/* 
+
+            For Laptops & Desktops
+
+
+*/
+/* 
+
+    Large Screen
+
+
+*/
+@media (width: 1024px) {
+    body{
+        background-color: rgb(3, 122, 122);
+        /* background-image: url(/Images/Printing\ img.jpg); */
+        background-repeat: no-repeat;
+        /* background-position: 320px 0px ; */
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    .label-area{
+        width: 35vw;
+        position: absolute;
+        top: 50vh;
+        left: 4vw;
+        background-color: rgba(13, 58, 97, 0.137);
+        text-align: center;
+        border: 2px solid rgba(240, 248, 255, 0.158);
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .label-area h2{
+        font-size: 2vw;
+    }
+    
+    .radio-div{
+        width: 40vw;
+        height: 65vh;
+        position: absolute;
+        left: 70vh;
+        bottom: 4vh;
+        background-color: rgba(207, 207, 16, 0.644);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 1.2vw groove rgba(42, 133, 15, 0.815);
+    }
+    .legend1{
+        font-size: 2.3vw;
+        font-weight: 900;
+    }
+    
+    .semester{
+        padding: 2px 2px;
+        margin-bottom: 5px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.8vw;
+        /* background-color: yellowgreen; */
+    }
+    .exam-type{
+        padding: 2px 2px;
+        margin-bottom: 5px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.8vw;
+        /* background-color: yellowgreen; */
+    }
+    .dept{
+        padding: 2px 2px;
+        margin-bottom: 5px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.8vw;
+        /* background-color: yellowgreen; */
+    }
+    .date{
+        padding: 2px 2px;
+        margin-bottom: 5px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.8vw;
+        /* background-color: yellowgreen; */
+    }
+    
+    .year{
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.8vw;
+        /* background-color: antiquewhite; */
+    }
+    
+    .batch{
+        /* background-color: crimson; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.8vw;
+    }
+    
+    .section{
+        /* background-color: orange; */
+        position: relative;
+        left: 4vw;
+        font-size: 1.8vw;
+    
+    }
+    
+    .exam-term{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.8vw;
+    }
+    .batch-time{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.8vw;
+    }
+    
+    .submit button{
+        background-color: rgba(48, 121, 139, 0.781);
+        font-weight: bolder;
+        font-size: 1.6vw;
+        width: 10vw;
+        height: 6.8vh;
+        position: relative;
+        left: 4vw;
+        top: 2.6vh;
+        
+    }
+    
+   
+}
+
+
+/* 
+
+    Extra Large Screen
+        
+    Viewport: 1440px
+
+*/
+@media (width: 1440px){
+    body{
+        background-color: rgb(3, 122, 122);
+        background-image: url(/Images/classroom-big-size.webp);
+        background-repeat: no-repeat;
+        /* background-position: 320px 0px ; */
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        margin: 0;
+        padding: 0;    
+    }
+    
+    
+    .label-area{
+        width: 25vw;
+        position: absolute;
+        top: 50vh;
+        left: 4vw;
+        background-color: rgba(26, 68, 116, 0.815);
+        text-align: center;
+        border: 2px solid rgba(240, 248, 255, 0.158);
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .label-area h2{
+        font-size: 2vw;
+        color: #f7f7f7;
+    }
+    
+    
+    
+    /*    
+            
+            Field Set CSS 
+            
+    */
+    .legend1{
+        font-size: 2.2vw;
+        font-weight: 900;
+    }
+    
+    .radio-div{
+        width: 35vw;
+        height: 64vh;
+        position: absolute;
+        left: 45vw;
+        bottom: 6vh;
+        background-color: rgba(50, 161, 28, 0.644);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 1.2vw groove rgba(42, 133, 15, 0.815);
+    }
+    
+    
+    .semester{
+        padding: 2px 2px;
+        margin-bottom: 5px;
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+        /* background-color: yellowgreen; */
+    }
+    
+    .year{
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+        /* background-color: antiquewhite; */
+    }
+    .date{
+        /* background-color: orange; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+    
+    }
+    
+    .batch{
+        /* background-color: crimson; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+    }
+    
+    .section{
+        /* background-color: orange; */
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+    
+    }
+    .dept{
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+    }
+    
+    .exam-term{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+    }
+    .exam-type{
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+    }
+    .batch-time{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+    }
+    
+    .submit button{
+        background-color: rgba(66, 194, 226, 0.781);
+        font-weight: bold;
+        font-size: .9vw;
+        width: 8vw;
+        height: 4vh;
+        
+    }
+    .submit{
+        position: relative;
+        left: 14vw;
+        bottom: .1vh;
+        width: 4vw;
+        
+    }
+    }
+    
+
+
+/* 
+
+    Extra Extra Large Screen
+
+    Viewport: 1536*864px
+
+
+*/
+@media (width: 1536px){
+    body{
+        background-color: rgb(3, 122, 122);
+        background-image: url(/Images/classroom-big-size.webp);
+        background-repeat: no-repeat;
+        /* background-position: 320px 0px ; */
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        margin: 0;
+        padding: 0;    
+    }
+    
+    
+    .label-area{
+        width: 25vw;
+        position: absolute;
+        top: 50vh;
+        left: 4vw;
+        background-color: rgba(26, 68, 116, 0.815);
+        text-align: center;
+        border: 2px solid rgba(240, 248, 255, 0.158);
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .label-area h2{
+        font-size: 2vw;
+        color: #f7f7f71.6
+    }
+    
+    
+    
+    /*    
+            
+            Field Set CSS 
+            
+    */
+    .legend1{
+        font-size: 2vw;
+        font-weight: 900;
+    }
+    
+    .radio-div{
+        width: 35vw;
+        height: 64vh;
+        position: absolute;
+        left: 45vw;
+        bottom: 6vh;
+        background-color: rgba(50, 161, 28, 0.644);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 1.2vw groove rgba(42, 133, 15, 0.815);
+    }
+    
+    
+    .semester{
+        padding: 2px 2px;
+        margin-bottom: 5px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+        /* background-color: yellowgreen; */
+    }
+    
+    .year{
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+        /* background-color: antiquewhite; */
+    }
+    .date{
+        /* background-color: orange; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    
+    }
+    
+    .batch{
+        /* background-color: crimson; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    }
+    
+    .section{
+        /* background-color: orange; */
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    
+    }
+    .dept{
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    }
+    
+    .exam-term{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    }
+    .exam-type{
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    }
+    .batch-time{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    }
+    
+    .submit button{
+        background-color: rgba(66, 194, 226, 0.781);
+        font-weight: bold;
+        font-size: .9vw;
+        width: 8vw;
+        height: 4vh;
+        
+    }
+    .submit{
+        position: relative;
+        left: 14vw;
+        bottom: .1vh;
+        width: 4vw;
+        
+    }
+
+}
+
+/* 
+        
+        Viewport: 1920*1080px
+    
+ */
+@media (width: 1920px){
+    body{
+        background-color: rgb(3, 122, 122);
+        background-image: url(/Images/classroom-big-size.webp);
+        background-repeat: no-repeat;
+        /* background-position: 320px 0px ; */
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        margin: 0;
+        padding: 0;    
+    }
+    
+    
+    .label-area{
+        width: 25vw;
+        position: absolute;
+        top: 50vh;
+        left: 4vw;
+        background-color: rgba(26, 68, 116, 0.815);
+        text-align: center;
+        border: 2px solid rgba(240, 248, 255, 0.158);
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .label-area h2{
+        font-size: 2vw;
+        color: #f7f7f71.6
+    }
+    
+    
+    
+    /*    
+            
+            Field Set CSS 
+            
+    */
+    .legend1{
+        font-size: 2vw;
+        font-weight: 900;
+    }
+    
+    .radio-div{
+        width: 35vw;
+        height: 64vh;
+        position: absolute;
+        left: 45vw;
+        bottom: 6vh;
+        background-color: rgba(50, 161, 28, 0.644);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 1.2vw groove rgba(42, 133, 15, 0.815);
+    }
+    
+    
+    .semester{
+        padding: 2px 2px;
+        margin-bottom: 5px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+        /* background-color: yellowgreen; */
+    }
+    
+    .year{
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+        /* background-color: antiquewhite; */
+    }
+    .date{
+        /* background-color: orange; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    
+    }
+    
+    .batch{
+        /* background-color: crimson; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    }
+    
+    .section{
+        /* background-color: orange; */
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    
+    }
+    .dept{
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    }
+    
+    .exam-term{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    }
+    .exam-type{
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    }
+    .batch-time{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    }
+    
+    .submit button{
+        background-color: rgba(66, 194, 226, 0.781);
+        font-weight: bold;
+        font-size: .9vw;
+        width: 8vw;
+        height: 4vh;
+        
+    }
+    .submit{
+        position: relative;
+        left: 14vw;
+        bottom: .1vh;
+        width: 4vw;
+        
+    }
+   
+}
+
+/* 
+
+
+            Viewport: 2560*1440px 
+            
+            
+*/
+@media (width: 2560px){
+    body{
+        background-color: rgb(3, 122, 122);
+        background-image: url(/Images/classroom-big-size.webp);
+        background-repeat: no-repeat;
+        /* background-position: 320px 0px ; */
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        margin: 0;
+        padding: 0;    
+    }
+    
+    
+    .label-area{
+        width: 25vw;
+        position: absolute;
+        top: 50vh;
+        left: 4vw;
+        background-color: rgba(26, 68, 116, 0.815);
+        text-align: center;
+        border: 2px solid rgba(240, 248, 255, 0.158);
+        border-radius: 30px;
+        display: inline-block;
+    }
+    .label-area h2{
+        font-size: 2vw;
+        color: #f7f7f71.6
+    }
+    
+    
+    
+    /*    
+            
+            Field Set CSS 
+            
+    */
+    .legend1{
+        font-size: 2vw;
+        font-weight: 900;
+    }
+    
+    .radio-div{
+        width: 35vw;
+        height: 64vh;
+        position: absolute;
+        left: 45vw;
+        bottom: 6vh;
+        background-color: rgba(50, 161, 28, 0.644);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 1.2vw groove rgba(42, 133, 15, 0.815);
+    }
+    
+    
+    .semester{
+        padding: 2px 2px;
+        margin-bottom: 5px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+        /* background-color: yellowgreen; */
+    }
+    
+    .year{
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 2vw;
+        /* background-color: antiquewhite; */
+    }
+    .date{
+        /* background-color: orange; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    
+    }
+    
+    .batch{
+        /* background-color: crimson; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    }
+    
+    .section{
+        /* background-color: orange; */
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    
+    }
+    .dept{
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    }
+    
+    .exam-term{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    }
+    .exam-type{
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    }
+    .batch-time{
+        /* background-color: darkkhaki; */
+        margin: 15px 1px;
+        position: relative;
+        left: 4vw;
+        font-size: 1.6vw;
+    }
+    
+    .submit button{
+        background-color: rgba(66, 194, 226, 0.781);
+        font-weight: bold;
+        font-size: .9vw;
+        width: 8vw;
+        height: 4vh;
+        
+    }
+    .submit{
+        position: relative;
+        left: 14vw;
+        bottom: .1vh;
+        width: 4vw;
+        
+    }
+    
+   
+}

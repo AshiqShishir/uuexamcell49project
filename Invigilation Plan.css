@@ -1,0 +1,17 @@
+body{
+    background-image: url(Images/invigilator.webp)!important;
+}
+.invigilator .radio-div{
+width: 30vw;
+height: 40vh;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.invigilator .radio-div .i-submit{
+    position: relative;
+    left: 16vw;
+    bottom: 14vh;
+}

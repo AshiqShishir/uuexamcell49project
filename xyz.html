@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Sidebar Page</title>
+  <style>
+    /* Basic styling for the sidebar */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #sidebar {
+      height: 100vh;
+      width: 250px;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    #sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #sidebar li {
+      margin-bottom: 10px;
+    }
+
+    #content {
+      padding: 20px;
+      position: absolute;
+      right: 2vw;
+      top: 15vh;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <h2>Sidebar</h2>
+    <ul>
+      <li><a href="#" onclick="performAction('Action 1')">Action 1</a></li>
+      <li><a href="#" onclick="performAction('Action 2')">Action 2</a></li>
+      <li><a href="#" onclick="performAction('Action 3')">Action 3</a></li>
+    </ul>
+  </div>
+
+  <!-- Main content area -->
+  <div id="content">
+    <h1>Content Area</h1>
+    <p id="result">Select an action from the sidebar to perform an action.</p>
+  </div>
+
+  <!-- JavaScript to handle actions -->
+  <script>
+    function performAction(action) {
+      // You can write JavaScript code here to handle the actions based on the selected item.
+      // For this example, we will simply update the result paragraph with the selected action.
+      document.getElementById('result').textContent = `You clicked: ${action}`;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+.cse-day-field{
+    width: 35vw;
+    border-radius: 5px 25px;
+    position: absolute;
+    top: 26vh;
+    left: 28vw;
+}
+.cse-day-field h1{
+    font-size: 1.4vw;
+}
+.cse-day-field h3{
+    font-size: 1.3vw;
+    color: rgb(218, 218, 31);
+}
+
+.span1{
+    position: relative;
+    left: 2.5vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: rgb(3, 36, 65);
+}
+.batch-side-nav-container{
+    width: 8vw;
+    height: calc(100% - 23vh);
+    background: rgb(182, 205, 50);
+}
+.batch-side-nav-container ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    justify-content: space-evenly;
+    line-height: 1;
+    
+}
+.batch-side-nav-container ul li{
+    background: rgb(34, 166, 184);
+    list-style: none;
+    margin: 4px;
+    border: 2px solid rebeccapurple;
+    border-radius: 10px 2px;
+    
+    
+}
+.batch-side-nav-container ul li:hover{
+    background: rgb(8, 146, 123);
+    transform: translateX(12px); 
+    border-radius: 10px 2px; 
+}
+.batch-side-nav-container ul li a{
+    text-decoration: none;
+}
+.batch-side-nav-container ul li a span{
+    font-size: 1.8vw;
+    position: relative;
+    left: 2.5vw;
+}
+
+
+/* Table Style */
+.table-container1{
+    position: absolute;
+    top: 35vh;
+    left: 25vw;
+    border: 4px solid;
+    background: rgb(14, 141, 135);
+    width: 40vw;
+}
+.table-container1 thead tr th{
+    border: 2px solid rgb(58, 3, 3);
+    text-align: center;
+    color: aliceblue;
+}
+.table-container1 tbody tr td{
+    border: 2px solid rebeccapurple;
+    text-align: center;
+    color: aliceblue;
+}

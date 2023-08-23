@@ -1,0 +1,104 @@
+body{
+    background-image: url(/Images/Teacher_auto_x2.webp);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-color: rgba(14, 158, 194, 0.664);
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+}
+.f-area{
+    width: 30vw;
+    position: absolute;
+    top: 38vh;
+    left: 38vw;
+    background-color: rgba(14, 76, 124, 0.911);
+    text-align: center;
+    border: 2px solid rgba(240, 248, 255, 0.158);
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.navbar{
+    /* background-color: aqua; */
+    position: absolute;
+    left: 30vw;
+    bottom: 15vh;
+    width: 55vw;
+    height: 30vh;
+}
+.navbar .navbar-list{
+    background-color: rgba(55, 211, 211, 0.356);
+    border: 4px solid;
+    width: 40vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.list{
+    position: relative;
+    top: 10vh;
+    width: 20vw;
+    height: 10vh;
+    text-align: center;
+    list-style: none;   
+}
+.list a{
+    width: 400px;
+    padding: 6px 6px;
+    border: 4px solid rgb(105, 105, 9);
+}
+.navbar-list li a{
+    text-decoration: none;
+    color: rgba(0, 5, 7, 0.993);
+    font-family: fantasy;
+    font-size: 30px;
+}
+.navbar-list li a:link{
+    background-color: rgba(9, 134, 143, 0.836);
+    
+}
+.navbar-list li a:visited{
+    background-color: rgb(148, 134, 8);
+}
+.navbar-list li a:hover{
+    background-color: rgba(221, 190, 12, 0.993);
+}
+ul li a:active{
+background-color: rgb(122, 77, 9);
+}
+
+.button{
+    width: 16vw;
+    height: 8vh;
+    position: absolute;
+    bottom: 4vh;
+    left: 3vw;
+    display: flex;  
+    justify-content: space-evenly;  
+}
+.back-button{
+    width: 6vw;
+    background-color: #06423a;
+    cursor: -webkit-grab;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: rgba(240, 248, 255, 0.836);
+}
+
+
+
+#date{
+    color: rgb(6, 12, 97);
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}

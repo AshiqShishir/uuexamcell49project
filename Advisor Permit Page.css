@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(3, 122, 122);
+    background-image: url(Images/printer-fotor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+}
+
+
+.label-area{
+    width: 30vw;
+    position: absolute;
+    top: 45vh;
+    left: 4vw;
+    background-color: rgba(180, 195, 207, 0.904);
+    text-align: center;
+    border: 2px solid rgba(240, 248, 255, 0.158);
+    border-radius: 30px;
+    display: inline-block;
+}
+.label-area h2{
+    font-size: 2vw;
+}
+
+
+
+/*    
+        
+        Field Set CSS 
+        
+*/
+.legend1{
+    font-size: 1.2vw;
+    font-weight: 900;
+}
+
+.radio-div{
+    width: 30vw;
+    height: 60vh;
+    position: absolute;
+    left: 80vh;
+    bottom: 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(207, 207, 16, 0.644);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1.2vw groove rgba(42, 133, 15, 0.815);
+}
+
+
+.permit-affirm .radio-div .s_id{
+    position: relative;
+    left: 4vw;
+}
+.s_id label{
+    font-size: 1.22vw;
+}
+/* #submit{
+    background-color: rgba(255, 71, 126, 0.781);
+    font-weight: bolder;
+    font-size: 15px;
+    width: 70px;
+} */
+.view-button{
+    margin-left: 140px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.view-button button{
+    width: 6vw;
+    height: 5vh;
+    position: relative;
+    left:  1vw;
+}
+.view-button button a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0c5f58;
+}
+.view-button button:hover{
+    background-color: #086e8d;
+}
+.view-button button:hover a{
+    color:aliceblue;
+}
+.approval-button{
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.approval-button button{
+    width: 10vw;
+    height: 6vh;
+    position: relative;
+    left: 6vw;
+    bottom: 2vh;
+}
+.approval-button button a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0c5f58;
+}
+.approval-button button:hover{
+    background-color: #086e8d;
+    transform: translateX(-2vw);
+}
+.approval-button button:hover a{
+    color: #e7eef0;
+}
+.approval-button-ul{
+    display: none;
+    width: 10vw;
+    height: 6vh;
+    list-style: none;
+    line-height: 4vh;
+    
+}
+.approval-button-ul li{
+    /* margin: 4px; */
+    background: #023746;
+    position: relative;
+    left: 8vw;
+    top: 3vh;
+    border-radius: 10px 0px;
+    transform: scale(1.2);
+    
+}
+#approve-button2:hover .approval-button-ul{
+    display: block;
+}
+.approval-button-li:hover{
+    transform: scale(1.5);
+}
+

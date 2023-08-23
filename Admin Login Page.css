@@ -1,0 +1,202 @@
+html{
+    background-image: url(Images/campus1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    
+}
+
+
+.homebox{
+    /* background-color: rgb(2, 214, 221);
+    border-radius: 2px solid maroon; */
+    height: 36vw;
+    width: 30vw;
+    position: absolute;
+    left: 60vw;
+} 
+.headerbox{
+    /* margin: 2px 2px;
+    padding: 2px 2px; */
+    font-size: 2vw;
+    text-align: center;
+    height: 6vw;
+    }  
+    .headerbox #header2{
+        font-size: 1.2vw; 
+    }
+    .headerbox a{
+        text-decoration: none;
+    }
+    
+    .headerbox a:link{
+        color: black;
+    }
+    .headerbox a:visited{
+        color: black;
+    }
+    .headerbox a:hover{
+        color: rgb(59, 105, 5);
+    }
+    .headerbox a:active{
+        color: black;
+    }
+    .form{
+        background-color: #ffffffc4;
+        border: 1vw solid whitesmoke;
+        border-radius: 1vw;
+        /* margin: 5vw 0vw; */
+        /* padding: 10vw 10vw; */
+        width: 25vw;
+        height: 30vw;
+        float: right;
+        opacity: .9;
+    }
+    .id,.pass{
+         margin: 1vw;
+        /* padding: 10px 10px; */ 
+        border: 2px solid;
+        border-radius: 6px;
+        border-color: #ffffffc4;
+        height: 3vw;
+    }
+    .id input{
+        /* margin-left: ;
+        margin-right: ; */
+        width: 16vw;
+        height: 1.5vw;
+        position: relative;
+        left: 1.2vw;
+        top: .6vw;
+    }
+    .pass input{
+        width: 16vw;
+        height: 1.5vw;
+        position: relative;
+        left: .1vw;
+        top:.6vw;
+    }
+    .id label, .pass label{
+        position: relative;
+        top: .6vw;
+    }
+    .link a:link{
+        color: blue;
+        text-decoration: none;
+    }
+    .link a:visited{
+        color: rgb(129, 111, 5);
+        text-decoration: none;
+    }
+    .link a:hover{
+        color: rgb(2, 39, 30);
+        text-decoration: none;
+    }
+    
+    .link a:active{
+        color: rgb(0, 153, 255);
+        text-decoration: none;
+    }
+    .button{
+        /* background-color: azure; */
+        color: steelblue;
+        /* text-align: center; */
+    }
+    #button1{
+        position: relative;
+        top: 4vw;
+        left: 2vw;
+        color: rgb(8, 64, 109);
+        font-weight: bolder;
+        font-family: inherit;
+        font-size: larger;
+        /* display: inline-block; */
+        
+    
+    }
+    
+    .link{
+        position: relative;
+        top: 2vw;
+        left: 2vw;
+    }
+    .link2{
+        position: relative;
+        top: 4vw;
+        left: 6vw;
+    }
+    
+    .button button{
+        cursor: pointer;
+    }
+    .button button a{
+        text-decoration: none;
+    }
+    .button button a:hover{
+        color: rgb(6, 34, 70);
+    }
+    .button button:link{
+        color: blue;
+        text-decoration: none;
+    }
+    .button button:visited{
+        color: rgb(82, 90, 13);
+        text-decoration: none;
+    }
+    .button button:hover{
+        /* color: rgb(2, 39, 30); */
+        background-color: rgb(18, 146, 108);
+    }
+    .button button:active{
+        color: rgb(0, 153, 255);
+        text-decoration: none;
+    }
+    .button a{
+        text-decoration: none;
+    }
+    .button a:visited{
+        color: rgb(129, 111, 5);
+    }
+    .button a:hover{
+        color: #062047;
+    }
+    
+    .button-back{
+        position: absolute;
+        left: 4vw;
+        bottom: 3vw;
+    }
+    .button-back1{
+        width: 5vw;
+        height: 3vw;
+        /* background-color: #910712; */
+    
+    }
+    
+    .button-back1 a{
+        text-decoration: none;
+        font-size: 1vw;
+        font-weight: bold;
+    }
+    .button-back1 a:link{
+        color: maroon;
+    }
+    .button-back1 a:visited{
+        color: rgb(151, 73, 8);
+    }
+    .button-back1 a:hover{
+        color: rgb(235, 235, 220);
+    }
+    .button-back1 a:active{
+        color: black;
+    }
+    .button-back1:hover{
+        background-color: rgba(228, 225, 61, 0.63);
+        
+    }
+
+    

@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/Images/computer.webp);
+    background-image: url(Images/computer.webp);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-color: rgb(15, 140, 172);
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.f-area{
+    width: 30vw;
+    position: absolute;
+    top: 38vh;
+    left: 32vw;
+    background-color: rgba(14, 76, 124, 0.911);
+    text-align: center;
+    border: 2px solid rgba(240, 248, 255, 0.158);
+    border-radius: 30px;
+    display: inline-block;
+}
+.f-area h1{
+    color: aliceblue;
+}
+
+/* Admin Sidebar Navigation Style */
+.side-navbar{
+    background: rgb(47, 118, 211);
+    width: 16vw;
+    height: calc(100vh - 23vh);
+    position: absolute;
+    /* left: 83vw; */
+    right: 0;
+}
+.side-navbar .side-navbar-ul{
+    /* background: rgb(151, 177, 6); */
+    width: 15vw;
+    height: calc(100vh - 23vh);
+    position: absolute;
+}
+.side-navbar .side-navbar-ul .side-navbar-li{
+    width: 100%;
+    height: 9vh;
+    list-style: none;
+    position: relative;
+    /* background: tomato; */
+}
+.side-navbar .side-navbar-ul .side-navbar-li a{
+    /* background: violet; */
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    transition: all .5s ease;
+    padding: 5px 10px;
+}  
+
+.side-navbar .side-navbar-ul .side-navbar-li a i{
+    /* background: yellowgreen; */
+    color: whitesmoke;
+    min-width: 3vw;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.side-navbar .side-navbar-ul .side-navbar-li a span{
+    /* background: yellowgreen; */
+    color: whitesmoke;
+    min-width: 3vw;
+    /* text-align: center; */
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* .side-navbar .side-navbar-ul .side-navbar-li:hover{
+    background: rgb(41, 196, 131);
+    
+} */
+.side-navbar .side-navbar-ul .side-navbar-li:hover{
+    background: rgb(41, 196, 131);
+    transform: scale(1);
+    min-width: 2vw;
+    position: relative;
+    right: 3vw;
+    border-radius: 5px 40px;
+    
+    
+    
+}
+
+/* Sub UL and LI */
+.side-navbar .side-navbar-ul .side-navbar-li .side-navbar-sub_ul{
+    background: rgb(41, 196, 131);
+    position: absolute;
+    right: 15vw;
+    top: 1vh;
+    display: none;
+    height: 14vh;
+    border-radius: 15px 35px;
+}
+.side-navbar .side-navbar-ul .side-navbar-li:hover .side-navbar-sub_ul{
+    display: initial;
+}
+.side-navbar .side-navbar-ul .side-navbar-li .side-navbar-sub_ul li{
+list-style: none;
+position: relative;
+bottom: 13vh;
+line-height: 1.5;
+margin: 2px;
+border-radius: 15px 35px;
+}
+
+.side-navbar .side-navbar-ul .side-navbar-li .side-navbar-sub_ul li a{
+    font-size: .1rem;
+    text-transform: lowercase;
+    padding-top: 0;
+}
+.side-navbar .side-navbar-ul .side-navbar-li .side-navbar-sub_ul li:hover{
+    border-radius: 0px 25px;
+    background-color: rgb(6, 121, 121);
+}
+
+
+.page-view1{
+    position: absolute;
+    top: 60vh;
+    left: 16vw;
+    width: 20vw;
+    height: 22vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+    background-color: rgb(216, 192, 56);
+    border-radius: 10px 40px;
+}
+.page-view .page-view1{
+    /* display: flex;
+    justify-content: space-between; */
+}
+.page-view2{
+    position: absolute;
+    top: 60vh;
+    left: 46vw;
+    width: 20vw;
+    height: 22vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+    background-color: rgb(54, 204, 142);
+    border-radius: 10px 40px;
+}
+
+
+/* Exam Schedule Upload Style */ 
+.upload-file-ul{
+    width: 10vw;
+}
+.upload-file-ul .upload-file-li{
+    position: relative;
+    top: .5vh;
+    left: .1vw;
+}
+.side-navbar .side-navbar-ul .side-navbar-li a ul li .custom-file-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: aliceblue;
+    
+}
+
+.custom-file-upload:hover {
+    /* background-color: #2980b9; */
+}
+
+#upload {
+    display: none;
+}
+
+#file-name {
+    /* margin-top: 10px;
+    font-weight: bold; */
+}

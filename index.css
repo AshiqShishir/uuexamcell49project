@@ -1,0 +1,526 @@
+html{
+    /* background-image: url(/Images/campus3.jpg); */
+    background-color: rgb(2, 17, 36);
+    /* height: 600px; */
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+.image{
+    height: 12vw; 
+    width: 5vw;
+    /* background-color: rgba(221, 225, 230, 0.822);  */
+    position: relative;
+    left: 46vw;
+    
+}
+
+.image img{
+    height: 10vw;
+    width: 10vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vw;
+    position: absolute;
+    top: 0;
+    left: 0;   
+}
+.image .new-logo{
+    width: 25vw;
+    position: absolute;
+    left: -10vw;
+}
+.new-logo{
+    opacity: 0;
+    
+}
+.old-logo {
+    /* position: absolute; */
+    right: 1vw;
+    height: 10vw;
+}
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+@keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  
+.new-logo {
+    animation: fade-in 5s ease-in;
+    opacity: 1;
+  }
+.old-logo{
+    animation: fade-out 5s ease-out;
+    opacity: 0;
+}
+
+.head{
+    /* position: absolute;
+    top: 20vh;
+    right: 13vw; */
+    margin:5vw -2vw ;
+    color: rgb(rgb(9, 28, 65), rgb(4, 16, 85), rgb(5, 5, 73))
+    font-size: 3vw;
+    width: 25vw;
+    height: 8vw;
+    background-color: rgb(200, 210, 221);
+    text-align: center;
+    border: 2px solid rgba(226, 222, 230, 0.034);
+    border-radius: 5px;
+    color: rgb(215, 224, 231);
+    
+}
+.head h4{
+    position: relative;
+    bottom: 1vw;
+    font-size: 3vw;
+    color: #041b5a;
+    
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 60vw;
+    height: 20vh;
+    align-items: center;
+    position: relative;
+    top: 70vh;
+    left: 20vw;
+    /* background-color: rgb(219, 228, 210);
+    border: 4px solid; */
+  }
+  
+  .container a {
+    width: 1vw;
+    font-size: 3vw;
+    text-decoration: none;
+  }
+  
+  .user {
+    background-color: rgb(192, 192, 206);
+    width: 15vw;
+    height: 9vh;
+    text-align: center;
+    border: 2px solid;
+    position: relative;
+  }
+  
+  .container .user a {
+    width: 15vw;
+    height: 10vh;
+    color: rgb(122, 41, 11);
+  }
+
+  .user .sub-button li{
+    position: relative;
+    bottom: 3.5vh;
+    right: 3.2vw;
+  }
+  
+  .user:link {
+    cursor: pointer;
+    background-color: rgb(9, 96, 146);
+  }
+  .user:visited {
+    cursor: pointer;
+    background-color: rgb(80, 4, 21);
+  }
+  .user:hover {
+    cursor: pointer;
+    background-color: rgba(202, 236, 80, 0.747);
+  }
+  .user:active {
+    cursor: pointer;
+    background-color: rgb(9, 96, 146);
+  }
+  
+  .sub-button {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  
+  .sub-button li {
+    list-style: none;
+    width: 15vw;
+    background-color: rgb(191, 194, 184);
+    margin: .6vh;
+    font-weight: bold;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  
+  .sub-button li a {
+    font-size: 1.4vw;
+    text-decoration: none;
+  }
+  
+  .user:hover .sub-button {
+    display: block;
+  }
+  
+  .user:hover .sub-button li {
+    visibility: visible;
+    opacity: 1;
+  }
+  .sub-button li:hover{
+    background-color: rgb(50, 97, 151);
+  }
+
+
+
+/* Media Queries */
+@media (max-width: 767px){
+    html{
+        /* background-color: rgb(80, 6, 6); */
+    }
+    .button {
+        width: 45vw;
+        height: 35vh;
+        flex-flow: column wrap;
+        justify-content: end;
+        position: absolute;
+        left: 22vw;
+        top: 30vw;
+    }
+    .button button{
+        height: 6vw;
+    }
+    .head{
+        position: absolute;
+        left: 38vw;
+        top: 15vw;
+        width: 25vw;
+        
+    }
+    .head h4{
+        font-size: 4vw;
+        position: relative;
+        bottom: 4vw;
+    }
+    .image{
+        position: absolute;
+        left: 46vw;
+        
+    }
+    .image img{
+        height: 10vw;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    html{
+        /* background-color: rgb(80, 6, 6); */
+    }
+    .button {
+        position: absolute;
+        left: 10vw;
+        top: 30vw;
+        width: 75vw;
+        height: 25vh;
+        /* flex-flow: column wrap;
+        justify-content: end; */
+    }
+    .button button{
+        height: 6vw;
+    }
+    .head{
+        position: absolute;
+        left: 41vw;
+        top: 15vw;
+        width: 20vw;
+        font-size: 3vw;
+    }
+    .image{
+        position: absolute;
+        left: 46vw;
+        
+    }
+    .image img{
+        height: 10vw;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1366px){
+    html{
+        /* background-color: rgb(80, 6, 6); */
+    }
+    .button {
+        position: absolute;
+        left: 10vw;
+        top: 30vw;
+        width: 75vw;
+        height: 25vh;
+        /* flex-flow: column wrap;
+        justify-content: end; */
+    }
+    .button button{
+        height: 3vw;
+        font-size: 2vw;
+    }
+    .head{
+        position: absolute;
+        left: 42vw;
+        top: 14vw;
+        width: 20vw;
+        height: 6vw;
+        
+    }
+    .head h4{
+        font-size: 3vw;
+        position: relative;
+        bottom: 3vw;
+    }
+    .image{
+        position: absolute;
+        left: 48vw;
+        
+    }
+    .image img{
+        height: 10vw;
+    }
+}
+@media (min-width: 1367px) and (max-width: 1519px){
+    html{
+        /* background-color: rgb(80, 6, 6); */
+    }
+    .button {
+        position: absolute;
+        left: 10vw;
+        top: 30vw;
+        width: 75vw;
+        height: 25vh;
+        /* flex-flow: column wrap;
+        justify-content: end; */
+    }
+    .button button{
+        height: 4vw;
+        font-size: 2vw;
+    }
+    .head{
+        position: absolute;
+        left: 37vw;
+        top: 15vw;
+        width: 30vw;
+        
+    }
+    .head h4{
+        position: relative;
+        bottom: 4vw;
+        font-size: 4vw;
+    }
+    .image{
+        position: absolute;
+        left: 46vw;
+        
+    }
+    .image img{
+        height: 10vw;
+    }
+}
+@media (min-width: 1520px) and (max-width: 1819px){
+    html{
+        /* background-color: rgb(80, 6, 6); */
+    }
+    .button {
+        position: absolute;
+        left: 10vw;
+        top: 30vw;
+        width: 75vw;
+        height: 25vh;
+        /* flex-flow: column wrap;
+        justify-content: end; */
+    }
+    .button button{
+        height: 4vw;
+        font-size: 2vw;
+    }
+    .head{
+        position: absolute;
+        left: 37vw;
+        top: 15vw;
+        width: 30vw;
+        
+    }
+    .head h4{
+        position: relative;
+        bottom: 4vw;
+        font-size: 4vw;
+    }
+    .image{
+        position: absolute;
+        left: 46vw;
+        
+    }
+    .image img{
+        height: 10vw;
+    }
+}
+@media (min-width: 1820px) and (max-width: 1919px){
+    html{
+        /* background-color: rgb(80, 6, 6); */
+    }
+    .button {
+        position: absolute;
+        left: 10vw;
+        top: 30vw;
+        width: 75vw;
+        height: 25vh;
+        /* flex-flow: column wrap;
+        justify-content: end; */
+    }
+    .button button{
+        height: 4vw;
+        font-size: 2vw;
+    }
+    .head{
+        position: absolute;
+        left: 37vw;
+        top: 15vw;
+        width: 30vw;
+        
+    }
+    .head h4{
+        position: relative;
+        bottom: 4vw;
+        font-size: 4vw;
+    }
+    .image{
+        position: absolute;
+        left: 46vw;
+        
+    }
+    .image img{
+        height: 10vw;
+    }
+}
+@media (min-width: 1920px) and (max-width: 2319px){
+    html{
+        /* background-color: rgb(80, 6, 6); */
+    }
+    .button {
+        position: absolute;
+        left: 10vw;
+        top: 30vw;
+        width: 75vw;
+        height: 25vh;
+        /* flex-flow: column wrap;
+        justify-content: end; */
+    }
+    .button button{
+        height: 4vw;
+        font-size: 2vw;
+    }
+    .head{
+        position: absolute;
+        left: 37vw;
+        top: 15vw;
+        width: 30vw;
+        
+    }
+    .head h4{
+        position: relative;
+        bottom: 4vw;
+        font-size: 4vw;
+    }
+    .image{
+        position: absolute;
+        left: 46vw;
+        
+    }
+    .image img{
+        height: 10vw;
+    }
+}
+@media (min-width: 2320px) and (max-width: 2619px){
+    html{
+        /* background-color: rgb(80, 6, 6); */
+    }
+    .button {
+        position: absolute;
+        left: 10vw;
+        top: 30vw;
+        width: 75vw;
+        height: 25vh;
+        /* flex-flow: column wrap;
+        justify-content: end; */
+    }
+    .button button{
+        height: 4vw;
+        font-size: 2vw;
+    }
+    .head{
+        position: absolute;
+        left: 37vw;
+        top: 15vw;
+        width: 30vw;
+        
+    }
+    .head h4{
+        position: relative;
+        bottom: 4vw;
+        font-size: 4vw;
+    }
+    .image{
+        position: absolute;
+        left: 46vw;
+        
+    }
+    .image img{
+        height: 10vw;
+    }
+}
+@media (min-width: 2620px) and (max-width: 2919px){
+    html{
+        /* background-color: rgb(80, 6, 6); */
+    }
+    .button {
+        position: absolute;
+        left: 10vw;
+        top: 30vw;
+        width: 75vw;
+        height: 25vh;
+        /* flex-flow: column wrap;
+        justify-content: end; */
+    }
+    .button button{
+        height: 4vw;
+        font-size: 2vw;
+    }
+    .head{
+        position: absolute;
+        left: 37vw;
+        top: 15vw;
+        width: 30vw;
+        
+    }
+    .head h4{
+        position: relative;
+        bottom: 4vw;
+        font-size: 4vw;
+    }
+    .image{
+        position: absolute;
+        left: 46vw;
+        
+    }
+    .image img{
+        height: 10vw;
+    }
+}
